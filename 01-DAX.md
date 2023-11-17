@@ -29,3 +29,11 @@
 - SampleFilterTable = FILTER(products, products[price] > 5) => return a table with less rows and have been filtered.
 
 ## ALL Function.
+- Return all the rows in the table, or all the values in the columns, ignoring any filters that might have been applied.
+- Revenue filtered by state = [Revenue Measure] / CALCULATE([Revenue Measure], ALL(location[state]))
+
+## ALLSELECTED Function
+- like ALL function , it's just not ignores filters from outside visualize.
+
+
+## ALLEXCEPT Function.
